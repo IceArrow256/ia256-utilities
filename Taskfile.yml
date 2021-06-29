@@ -25,3 +25,8 @@ tasks:
   clean:
     cmds:
       - cmake --build ./build --target clean
+
+  update:
+    cmds:
+      - git submodule foreach git pull origin master 
+
