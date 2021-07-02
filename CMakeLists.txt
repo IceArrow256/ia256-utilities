@@ -15,7 +15,7 @@ target_sources(ia256-utilities PRIVATE
 
 target_include_directories(ia256-utilities PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
-add_executable(tests)
+add_executable(tests EXCLUDE_FROM_ALL)
 target_sources(tests PRIVATE
               ${CMAKE_CURRENT_SOURCE_DIR}/tests/tests.cpp
               ${CMAKE_CURRENT_SOURCE_DIR}/src/system.cpp
