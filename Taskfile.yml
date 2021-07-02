@@ -8,11 +8,11 @@ tasks:
 
   configure_debug:
     cmds:
-      - cmake -B ./build -G {{.CLI_ARGS}} -DCMAKE_BUILD_TYPE=Debug
+      - cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B ./build -G {{.CLI_ARGS}} -DCMAKE_BUILD_TYPE=Debug
 
   configure_release:
     cmds:
-      - cmake -B ./build -G {{.CLI_ARGS}} -DCMAKE_BUILD_TYPE=Release
+      - cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -B ./build -G {{.CLI_ARGS}} -DCMAKE_BUILD_TYPE=Release
 
   build_debug:
     cmds:
@@ -28,5 +28,4 @@ tasks:
 
   update:
     cmds:
-      - git submodule foreach git pull origin master 
-
+      - git submodule foreach git pull origin master
