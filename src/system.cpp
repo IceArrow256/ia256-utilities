@@ -1,6 +1,6 @@
 #include <ia256-utilities/system.hpp>
 
-std::string exec(std::string const &input) {
+std::string ia256::exec(std::string const &input) {
   std::array<char, 128> buffer;
   std::string result;
   std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(input.c_str(), "r"), pclose);

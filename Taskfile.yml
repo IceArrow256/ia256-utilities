@@ -29,3 +29,7 @@ tasks:
   update:
     cmds:
       - git submodule foreach git pull origin master
+
+  run_tests:
+    cmds:
+      - cmake --build ./build --target run-tests
