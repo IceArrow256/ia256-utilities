@@ -10,7 +10,7 @@
 #include <string>
 
 namespace ia256 {
-  std::string exec(std::string const &input);
+  std::string exec(std::string const &input, bool is_ret=true);
 }
 
 #endif /* !__SYSTEM_HPP__ */

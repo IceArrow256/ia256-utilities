@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 * class for working with user dirs.
 * wrap code with namespace.
+* "noreturn" exec.
 
 ## [0.1.0] - 2020-07-02
 ### Added
