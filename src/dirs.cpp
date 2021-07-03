@@ -49,9 +49,9 @@ std::filesystem::path ia256::dirs::get_music_dir() {
 }
 
 std::filesystem::path ia256::dirs::get_pictures_dir() {
-  return this->user_dirs["XDG_VIDEOS_DIR"];
+  return this->user_dirs["XDG_PICTURES_DIR"];
 }
 
 std::filesystem::path ia256::dirs::get_videos_dir() {
-  return this->user_dirs["XDG_PICTURES_DIR"];
+  return this->user_dirs["XDG_VIDEOS_DIR"];
 }
